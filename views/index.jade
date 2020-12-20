@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  button(type='button', class='btn btn-primary', onclick='something()') Click
+
+
+  script.
+    var something = function(){
+      var book = '#{title}'
+      alert(book)
+      window.location.href = "http://stackoverflow.com";
+    }
